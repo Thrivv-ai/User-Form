@@ -42,7 +42,6 @@ export default {
           email: this.email
         }
         let URL = process.env.VUE_APP_BACKEND_URL + '/submit';
-        console.log("The URL is: ", URL)
         axios
           .post(URL, user_data)
           .then((data) => {
